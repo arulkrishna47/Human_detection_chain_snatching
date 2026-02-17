@@ -1,0 +1,21 @@
+# ByteTrack tracker configuration (CCTV optimized)
+
+tracker_type: bytetrack
+
+# High threshold = keep strong detections only
+track_high_thresh: 0.45
+
+# Allow weaker detections to keep ID alive
+track_low_thresh: 0.15
+
+# New track only if confidence is good
+new_track_thresh: 0.45
+
+# 🔥 VERY IMPORTANT: Keep tracks alive longer
+track_buffer: 60
+
+# Matching threshold (lower = stricter matching)
+match_thresh: 0.8
+
+# Fuse score + IoU for matching
+fuse_score: True
